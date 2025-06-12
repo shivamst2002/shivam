@@ -1,0 +1,387 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Choose a nice font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #4a2c2a; /* Coffee brown */
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #8B4513; /* SaddleBrown - a coffee color */
+}
+
+a:hover {
+    color: #A0522D; /* Sienna - darker coffee */
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.spacer-top {
+    margin-top: 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav .logo h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #4a2c2a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Reset margin for ul inside nav */
+}
+
+nav ul li {
+    margin-left: 25px;
+    margin-bottom: 0; /* Reset margin for li inside nav */
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #8B4513;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg'); /* Replace with your hero image */
+    /* Placeholder: background-color: #6b4f4b; color: #fff; */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #8B4513; /* SaddleBrown */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    border: none; /* For form button */
+    cursor: pointer; /* For form button */
+}
+
+.cta-button:hover {
+    background-color: #A0522D; /* Sienna */
+    color: #fff;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.cta-button.secondary:hover {
+    background-color: #fff;
+    color: #8B4513;
+}
+
+
+/* Content Sections */
+.content-section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f4f0eb; /* Light beige for contrast */
+}
+
+.bg-dark {
+    background-color: #4a2c2a; /* Coffee brown */
+}
+.text-light, .bg-dark h2, .bg-dark h3, .bg-dark p, .bg-dark label {
+    color: #f9f9f9;
+}
+.bg-dark a {
+    color: #e6ccb2; /* Lighter brown for links on dark bg */
+}
+.bg-dark a:hover {
+    color: #fff;
+}
+
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Features Grid (Why Choose Us) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.feature-item i {
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Franchise Section Specifics */
+#franchise .lead {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#franchise ul li i, #franchise ol li {
+    color: #5cb85c; /* Green check or emphasis */
+    margin-right: 8px;
+}
+#franchise ol {
+    list-style-type: decimal; /* Use numbers for process */
+}
+#franchise ol li {
+    color: #333; /* Regular text color for process steps */
+}
+.bg-dark #franchise ol li {
+    color: #f9f9f9;
+}
+
+
+/* Testimonials */
+.testimonial-slider {
+    /* Basic styling, JS needed for actual slider functionality */
+    display: flex;
+    flex-direction: column; /* Stack for now */
+    gap: 20px;
+}
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #8B4513;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.testimonial-item blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.testimonial-item cite {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Locations */
+.location-list p {
+    margin-bottom: 8px;
+}
+
+/* Contact Form */
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="tel"],
+#contact form select,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.bg-dark #contact form input,
+.bg-dark #contact form select,
+.bg-dark #contact form textarea {
+    background-color: #5e3c3a; /* Slightly lighter than bg-dark */
+    color: #fff;
+    border-color: #7a5c5a;
+}
+.bg-dark #contact form input::placeholder,
+.bg-dark #contact form textarea::placeholder {
+    color: #ddd;
+}
+
+
+#contact form textarea {
+    resize: vertical;
+}
+
+#contact form button {
+    width: auto; /* Or 100% if preferred */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #f9f9f9; /* Assuming on dark background */
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #e6ccb2;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #e6ccb2;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design (Basic Example) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        margin-top: 15px;
+        padding-left: 0; /* Remove padding for centered list */
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr; /* Stack columns */
+    }
+    .two-columns > div:first-child img { /* If image is first, add bottom margin */
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Stack features */
+    }
+}
